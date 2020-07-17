@@ -1,0 +1,43 @@
+<div class="card-body">
+    <span><h4>nombre capturado por componente1.ts: {{nombre}}</h4></span>
+<form>
+    <div class="form-group">
+        <label for ="placa">
+            <input type="string" class="form-control" id="placa" placeholder="Placa vehiculo" #placa> <br>
+        </label>
+        <label for="marca">
+            <input type="string" class="form-control" id="marca" placeholder="Marca vehiculo" #marca><br>
+        </label>
+    </div>
+<button type="submit" class="btn btn-primary" (click)="enviar (placa,marca)"> Enviar </button>
+<div class="form-group">
+
+    <div	class="card-content">
+        <div	class="card-img">
+                        <img	src="http://www.toyocosta.com/blog/wp-content/uploads/2018/10/Link_Rav2_Toyo_Octubre_V1-768x402.jpg"	alt="">
+                        
+        </div>
+        <div	class="card-desc">
+                   
+                                   
+                                        <a	href="#"	class="btn-card"></a>			
+        </div> 
+</div>
+
+
+    <app-componente1 *ngFor = 'let carro of carros'[carro]="carro" ,[contador]="{{contador}}"> </app-componente1>
+</div>
+
+</form>
+</div>
+
+<div>
+   
+</div>
+
+
+<h2>Arreglo enviado por componente2.ts</h2>
+<ul *ngFor = 'let vehiculo of Vehiculos' >
+   <li>{{vehiculo}}</li>   
+    <ul>
+
